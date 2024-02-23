@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8">
+      <title>Apps</title>
+   </head>
+   
+   <body>
+      <div>
+         <webview id = "foo" src = "http://apps.johorport.com.my/" style = 
+            "width:800px; height:600px;">
+            <div class = "indicator"></div>
+         </webview>
+      </div>
+      
+      <script type = "text/javascript">
+         // Event handlers for loading events.
+         // Use these to handle loading screens, transitions, etc
+         onload = () => {
+            const webview = document.getElementById('foo')
+            const indicator = document.querySelector('.indicator')
+
+            const loadstart = () => {
+               indicator.innerText = 'loading...'
+            }
+
+            const loadstop = () => {
+               indicator.innerText = ''
+            }
+
+            webview.addEventListener('did-start-loading', loadstart)
+            webview.addEventListener('did-stop-loading', loadstop)
+         }
+      </script>
+   </body>
+</html>

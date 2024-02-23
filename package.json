@@ -1,0 +1,18 @@
+{
+  "name": "Apps",
+  "version": "1.0.0",
+  "description": "hello world application on Electron.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.0.2"
+  },
+  "dependencies": {
+    "latest-version": "^7.0.0"
+  }
+}
