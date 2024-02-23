@@ -1,4 +1,4 @@
-#Instrcutions
+# Instrcutions
 
 - npm start
 - npm install -g electron-builder
