@@ -1,16 +1,11 @@
-npm start
+#Instrcutions
 
+- npm start
+- npm install -g electron-builder
+- electron-builder --version
+- electron-builder -mwl
 
-
-npm install -g electron-builder
-
-electron-builder --version
-
-electron-builder -mwl
-
-
-
-
-electron-builder --mac
-electron-builder --win
-electron-builder --linux
+## Target OS
+- electron-builder --win
+- electron-builder --linux
+- electron-builder --mac
